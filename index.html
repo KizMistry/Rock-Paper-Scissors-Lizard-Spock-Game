@@ -20,13 +20,15 @@
     </h1>
     
     <div id="game-area">
-        game area
+        
         <div id="result-message">
             <h2>you win/lose</h2>
+
+            <button>
+                <a href="#rules">Rules</a>
+            </button>
         </div>
-        <button>
-            <a href="#rules">Rules</a>
-        </button>
+        
         <div class="game-picks" id="users-pick"></div>
         <div class="game-picks" id="random-pick"></div>
 
@@ -38,7 +40,10 @@
         <div class="hands"></div>
         <div class="hands"></div>
 
-        <button data-type="submit">Submit</button>
+        <div id="play-game-btn">
+            <button data-type="submit">Play</button>
+        </div>
+        
 
         <div class="score-area">
             <p class="scores won">Rounds Won: <span id="score">0</span></p>

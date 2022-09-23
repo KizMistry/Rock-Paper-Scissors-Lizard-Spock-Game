@@ -4,6 +4,7 @@ body {
     background-color: coral;
     text-align: center;
     position: relative;
+    font-family: raleway, Arial, Helvetica, sans-serif;
 }
 
 #game-area {
@@ -31,4 +32,27 @@ body {
 .lost {
     margin-left: 20px;
     text-align: right;
+}
+
+.game-picks {
+    background-color: beige;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 250px;
+    margin: 20px;
+}
+
+.hands {
+    background-color: beige;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 150px;
+    margin: 20px;
+}
+
+#play-game-button {
+    display: block;
+    margin: 20px;
 }
