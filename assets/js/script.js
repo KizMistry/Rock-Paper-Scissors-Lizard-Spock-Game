@@ -25,10 +25,16 @@
                 document.getElementById('users-pick').innerHTML= `<img src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">`
             }
 
+            /** needs changing back to users-pick */
             function spock() {
-                document.getElementById('users-pick').innerHTML= `<img src="assets/images/spock-hand-icon.png" alt="spock hand icon">`
+                document.getElementById('random-pick').innerHTML= `<img src="assets/images/spock-hand-icon.png" alt="spock hand icon">`
             }
 
             function play() {
                 console.log("Hello")
             }
+
+            /** need event listener for play button click and run next function.
+             * need function to create random hand and change inner html of random-pick div.
+             * 
+             */
