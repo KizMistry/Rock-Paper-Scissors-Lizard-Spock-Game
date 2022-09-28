@@ -54,7 +54,31 @@ function play() {
 }
 
 function checkResult() {
-    console.log('check')
+
+    let userPick = document.getElementById("users-pick").children[0];
+    let usersHand = userPick.getAttribute("data-type");
+    let randomPick = document.getElementById("random-pick").children[0];
+    let randomsHand = randomPick.getAttribute("data-type");
+
+    if ((usersHand === "rock") === (randomsHand === "paper")) {
+        incrementLost();
+        document.getElementById("win-lose-message").innerHTML= "You Lose... Paper covers Rock!";
+    } else if ((usersHand === "rock") === (randomsHand === "spock")) {
+        incrementLost();
+        document.getElementById("win-lose-message").innerHTML= "You Lose... Spock vaporizes Rock!";
+    } else if ((usersHand === "rock") === (randomsHand === "scissors")) {
+        incrementWin();
+        document.getElementById("win-lose-message").innerHTML= "You Win... Rock smashes Scissors!";
+    } else if ((usersHand === "rock") === (randomsHand === "lizard")) {
+        incrementWin();
+        document.getElementById("win-lose-message").innerHTML= "You Win... Rock crushes Lizard!";
+    } else if (usersHand === randomsHand) {
+        incrementDrawn();
+        document.getElementById("win-lose-message").innerHTML= "Stalemate... You picked the same hands!";
+    }
+
+    console.log(usersHand)
+    console.log(randomsHand)
 }
 
 /** need a function to check the winner and create a 'you win/lose/draw' message.
