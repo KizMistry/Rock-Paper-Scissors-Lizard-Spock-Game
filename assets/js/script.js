@@ -2,12 +2,17 @@
  * The main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
  */
+
+// Event listeners for game buttons to run each function
+
 document.getElementById('rock').addEventListener('click', rock)
 document.getElementById('paper').addEventListener('click', paper)
 document.getElementById('scissors').addEventListener('click', scissors)
 document.getElementById('lizard').addEventListener('click', lizard)
 document.getElementById('spock').addEventListener('click', spock)
 document.getElementById('play').addEventListener('click', play)
+
+// Functions to populate the users selection
 
 function rock() {
     document.getElementById('users-pick').innerHTML = `<img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">`
@@ -25,15 +30,11 @@ function lizard() {
     document.getElementById('users-pick').innerHTML = `<img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">`
 }
 
-/** needs changing back to users-pick */
 function spock() {
-    document.getElementById('random-pick').innerHTML = `<img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">`
+    document.getElementById('users-pick').innerHTML = `<img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">`
 }
 
-/** need event listener for play button click and run next function.
- * need function to create random hand and change inner html of random-pick div.
- * 
- */
+// Function to generate a random hand when play button is clicked
 
 function play() {
 
