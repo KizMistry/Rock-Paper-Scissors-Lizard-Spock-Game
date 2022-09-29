@@ -12,26 +12,31 @@ document.getElementById('lizard').addEventListener('click', lizard)
 document.getElementById('spock').addEventListener('click', spock)
 document.getElementById('play').addEventListener('click', play)
 
-// Functions to populate the users selection
+// Functions to populate the users selection and clear random selection
 
 function rock() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">`
+    document.getElementById('users-pick').innerHTML = `<img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">`;
+    document.getElementById('random-pick').innerHTML = ""
 }
 
 function paper() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="paper" src="assets/images/paper-hand-icon.png" alt="paper hand icon">`
+    document.getElementById('users-pick').innerHTML = `<img data-type="paper" src="assets/images/paper-hand-icon.png" alt="paper hand icon">`;
+    document.getElementById('random-pick').innerHTML = ""
 }
 
 function scissors() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="scissors" src="assets/images/scissors-hand-icon.png" alt="scissors hand icon">`
+    document.getElementById('users-pick').innerHTML = `<img data-type="scissors" src="assets/images/scissors-hand-icon.png" alt="scissors hand icon">`;
+    document.getElementById('random-pick').innerHTML = ""
 }
 
 function lizard() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">`
+    document.getElementById('users-pick').innerHTML = `<img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">`;
+    document.getElementById('random-pick').innerHTML = ""
 }
 
 function spock() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">`
+    document.getElementById('users-pick').innerHTML = `<img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">`;
+    document.getElementById('random-pick').innerHTML = ""
 }
 
 // Function to generate a random hand when play button is clicked
