@@ -60,21 +60,79 @@ function checkResult() {
     let randomPick = document.getElementById("random-pick").children[0];
     let randomsHand = randomPick.getAttribute("data-type");
 
-    if ((usersHand === "rock") === (randomsHand === "paper")) {
-        incrementLost();
-        document.getElementById("win-lose-message").innerHTML= "You Lose... Paper covers Rock!";
-    } else if ((usersHand === "rock") === (randomsHand === "spock")) {
-        incrementLost();
-        document.getElementById("win-lose-message").innerHTML= "You Lose... Spock vaporizes Rock!";
-    } else if ((usersHand === "rock") === (randomsHand === "scissors")) {
-        incrementWin();
-        document.getElementById("win-lose-message").innerHTML= "You Win... Rock smashes Scissors!";
-    } else if ((usersHand === "rock") === (randomsHand === "lizard")) {
-        incrementWin();
-        document.getElementById("win-lose-message").innerHTML= "You Win... Rock crushes Lizard!";
-    } else if (usersHand === randomsHand) {
+    if (usersHand === randomsHand) {
         incrementDrawn();
         document.getElementById("win-lose-message").innerHTML= "Stalemate... You picked the same hands!";
+    } else if (usersHand === "rock") {
+        if (randomsHand === "paper") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Paper covers Rock!";
+        } else if (randomsHand === "spock") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Spock vaporizes Rock!";
+        } else if (randomsHand === "scissors") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Rock smashes Scissors!";
+        } else if (randomsHand === "lizard") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Rock crushes Lizard!";
+        }
+    } else if (usersHand === "paper") {
+        if (randomsHand === "lizard") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Lizard eats Paper!";
+        } else if (randomsHand === "scissors") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... scissors cuts Paper!";
+        } else if (randomsHand === "rock") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Paper covers Rock!";
+        } else if (randomsHand === "spock") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Paper disproves Spock!";
+        }
+    } else if (usersHand === "scissors") {
+        if (randomsHand === "rock") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Rock crushes Scissors!";
+        } else if (randomsHand === "spock") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Spock smashes Scissors!";
+        } else if (randomsHand === "paper") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Scissors cuts Paper!";
+        } else if (randomsHand === "lizard") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Scissors decapitates Lizard!";
+        }
+     } else if (usersHand === "lizard") {
+        if (randomsHand === "rock") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Rock crushes Lizard!";
+        } else if (randomsHand === "scissors") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Scissors decapitates Lizard!";
+        } else if (randomsHand === "paper") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Lizard eats Paper!";
+        } else if (randomsHand === "spock") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Lizard poisons Spock!";
+        }
+     } else if (usersHand === "spock") {
+        if (randomsHand === "lizard") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Lizard poisons Spock!";
+        } else if (randomsHand === "paper") {
+            incrementLost();
+            document.getElementById("win-lose-message").innerHTML= "You Lose... Paper disproves Spock!";
+        } else if (randomsHand === "rock") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Spock vaporizes Rock!";
+        } else if (randomsHand === "scissors") {
+            incrementWin();
+            document.getElementById("win-lose-message").innerHTML= "You Win... Spock smashes Scissors!";
+        }
     }
 
     console.log(usersHand)
