@@ -169,11 +169,6 @@ function checkResult() {
     console.log(randomsHand)
 }
 
-/** need a function to check the winner and create a 'you win/lose/draw' message.
- * need a function to then increment the relevant score.
- */
-
-
 /**
  * Gets the current rounds won from the DOM and increments it by 1
  */
@@ -181,6 +176,8 @@ function incrementWin() {
 
     let oldScore = parseInt(document.getElementById("won").innerText);
     document.getElementById("won").innerText = ++oldScore;
+    document.getElementById('users-pick').style.borderColor= "green";
+    document.getElementById('random-pick').style.borderColor= "red";
 
 }
 
@@ -191,6 +188,8 @@ function incrementWin() {
 
     let oldScore = parseInt(document.getElementById("drawn").innerText);
     document.getElementById("drawn").innerText = ++oldScore;
+    document.getElementById('users-pick').style.borderColor= "grey";
+    document.getElementById('random-pick').style.borderColor= "grey";
 
 }
 
@@ -201,5 +200,7 @@ function incrementLost() {
 
     let oldScore = parseInt(document.getElementById("lost").innerText);
     document.getElementById("lost").innerText = ++oldScore;
+    document.getElementById('users-pick').style.borderColor= "red";
+    document.getElementById('random-pick').style.borderColor= "green";
 
 }
