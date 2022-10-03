@@ -22,6 +22,8 @@ function rock() {
     document.getElementById('scissors').style.borderColor= "lightgrey";
     document.getElementById('lizard').style.borderColor= "lightgrey";
     document.getElementById('spock').style.borderColor= "lightgrey";
+    document.getElementById('users-pick').style.borderColor= "beige";
+    document.getElementById('random-pick').style.borderColor= "beige";
 }
 
 function paper() {
@@ -32,6 +34,8 @@ function paper() {
     document.getElementById('scissors').style.borderColor= "lightgrey";
     document.getElementById('lizard').style.borderColor= "lightgrey";
     document.getElementById('spock').style.borderColor= "lightgrey";
+    document.getElementById('users-pick').style.borderColor= "beige";
+    document.getElementById('random-pick').style.borderColor= "beige";
 }
 
 function scissors() {
@@ -42,6 +46,8 @@ function scissors() {
     document.getElementById('paper').style.borderColor= "lightgrey";
     document.getElementById('lizard').style.borderColor= "lightgrey";
     document.getElementById('spock').style.borderColor= "lightgrey";
+    document.getElementById('users-pick').style.borderColor= "beige";
+    document.getElementById('random-pick').style.borderColor= "beige";
 }
 
 function lizard() {
@@ -52,6 +58,8 @@ function lizard() {
     document.getElementById('scissors').style.borderColor= "lightgrey";
     document.getElementById('paper').style.borderColor= "lightgrey";
     document.getElementById('spock').style.borderColor= "lightgrey";
+    document.getElementById('users-pick').style.borderColor= "beige";
+    document.getElementById('random-pick').style.borderColor= "beige";
 }
 
 function spock() {
@@ -62,6 +70,8 @@ function spock() {
     document.getElementById('scissors').style.borderColor= "lightgrey";
     document.getElementById('lizard').style.borderColor= "lightgrey";
     document.getElementById('paper').style.borderColor= "lightgrey";
+    document.getElementById('users-pick').style.borderColor= "beige";
+    document.getElementById('random-pick').style.borderColor= "beige";
 }
 
 // Function to generate a random hand when play button is clicked
