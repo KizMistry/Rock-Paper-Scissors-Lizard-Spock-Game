@@ -16,7 +16,8 @@ document.getElementById('play').addEventListener('click', play)
 
 function rock() {
     document.getElementById('users-pick').innerHTML = `<img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">`;
-    document.getElementById('random-pick').innerHTML = ""
+    document.getElementById('random-pick').innerHTML = "";
+    document.getElementById('rock').style.borderColor= "green"
 }
 
 function paper() {
