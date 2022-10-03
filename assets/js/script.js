@@ -17,27 +17,51 @@ document.getElementById('play').addEventListener('click', play)
 function rock() {
     document.getElementById('users-pick').innerHTML = `<img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">`;
     document.getElementById('random-pick').innerHTML = "";
-    document.getElementById('rock').style.borderColor= "green"
+    document.getElementById('rock').style.borderColor= "green";
+    document.getElementById('paper').style.borderColor= "lightgrey";
+    document.getElementById('scissors').style.borderColor= "lightgrey";
+    document.getElementById('lizard').style.borderColor= "lightgrey";
+    document.getElementById('spock').style.borderColor= "lightgrey";
 }
 
 function paper() {
     document.getElementById('users-pick').innerHTML = `<img data-type="paper" src="assets/images/paper-hand-icon.png" alt="paper hand icon">`;
-    document.getElementById('random-pick').innerHTML = ""
+    document.getElementById('random-pick').innerHTML = "";
+    document.getElementById('paper').style.borderColor= "green";
+    document.getElementById('rock').style.borderColor= "lightgrey";
+    document.getElementById('scissors').style.borderColor= "lightgrey";
+    document.getElementById('lizard').style.borderColor= "lightgrey";
+    document.getElementById('spock').style.borderColor= "lightgrey";
 }
 
 function scissors() {
     document.getElementById('users-pick').innerHTML = `<img data-type="scissors" src="assets/images/scissors-hand-icon.png" alt="scissors hand icon">`;
-    document.getElementById('random-pick').innerHTML = ""
+    document.getElementById('random-pick').innerHTML = "";
+    document.getElementById('scissors').style.borderColor= "green";
+    document.getElementById('rock').style.borderColor= "lightgrey";
+    document.getElementById('paper').style.borderColor= "lightgrey";
+    document.getElementById('lizard').style.borderColor= "lightgrey";
+    document.getElementById('spock').style.borderColor= "lightgrey";
 }
 
 function lizard() {
     document.getElementById('users-pick').innerHTML = `<img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">`;
-    document.getElementById('random-pick').innerHTML = ""
+    document.getElementById('random-pick').innerHTML = "";
+    document.getElementById('lizard').style.borderColor= "green";
+    document.getElementById('rock').style.borderColor= "lightgrey";
+    document.getElementById('scissors').style.borderColor= "lightgrey";
+    document.getElementById('paper').style.borderColor= "lightgrey";
+    document.getElementById('spock').style.borderColor= "lightgrey";
 }
 
 function spock() {
     document.getElementById('users-pick').innerHTML = `<img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">`;
-    document.getElementById('random-pick').innerHTML = ""
+    document.getElementById('random-pick').innerHTML = "";
+    document.getElementById('spock').style.borderColor= "green";
+    document.getElementById('rock').style.borderColor= "lightgrey";
+    document.getElementById('scissors').style.borderColor= "lightgrey";
+    document.getElementById('lizard').style.borderColor= "lightgrey";
+    document.getElementById('paper').style.borderColor= "lightgrey";
 }
 
 // Function to generate a random hand when play button is clicked
