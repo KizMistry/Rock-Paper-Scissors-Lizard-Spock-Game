@@ -11,6 +11,7 @@ document.getElementById('scissors').addEventListener('click', scissors)
 document.getElementById('lizard').addEventListener('click', lizard)
 document.getElementById('spock').addEventListener('click', spock)
 document.getElementById('play').addEventListener('click', play)
+document.getElementById('reset-button').addEventListener('click', reset)
 
 // Functions to populate the users selection and clear random selection
 
@@ -213,4 +214,18 @@ function incrementLost() {
     document.getElementById('users-pick').style.borderColor= "red";
     document.getElementById('random-pick').style.borderColor= "green";
 
+}
+
+// Function to reset the game and scores
+function reset() {
+    let hands = document.getElementsByClassName('hands')
+
+    for (var i = 0; i < hands.length; i++) {
+        hands[i].style.borderColor= "lightgrey";
+     };
+    document.getElementById('users-pick').style.borderColor= "beige";
+    document.getElementById('random-pick').style.borderColor= "beige";
+    document.getElementById("won").innerText = "0";
+    document.getElementById("drawn").innerText = "0";
+    document.getElementById("lost").innerText = "0";
 }

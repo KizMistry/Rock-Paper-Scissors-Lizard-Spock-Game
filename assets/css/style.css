@@ -126,7 +126,17 @@ img {
 }
 
 #rules-button {
+    text-align:left;
+    position:relative;
+    right: 400px;
+    top: 50px;
+    display: inline-flex;
+}
+
+#reset-button {
     text-align:right;
     position:relative;
-    left: 200px
+    left: 400px;
+    top: 50px;
+    display: inline-flex;
 }
