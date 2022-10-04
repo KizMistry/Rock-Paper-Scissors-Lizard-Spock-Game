@@ -1,92 +1,97 @@
-/**
- * The main game "loop", called when the script is first loaded
- * and after the user's answer has been processed
- */
+// Global variables
+
+let rockHand = document.getElementById('rock');
+let paperHand = document.getElementById('paper');
+let scissorHand = document.getElementById('scissors');
+let lizardHand = document.getElementById('lizard');
+let spockHand = document.getElementById('spock');
+let usersPick = document.getElementById('users-pick');
+let randomsPick = document.getElementById('random-pick');
 
 // Event listeners for game buttons to run each function
 
-document.getElementById('rock').addEventListener('click', rock);
-document.getElementById('paper').addEventListener('click', paper);
-document.getElementById('scissors').addEventListener('click', scissors);
-document.getElementById('lizard').addEventListener('click', lizard);
-document.getElementById('spock').addEventListener('click', spock);
+rockHand.addEventListener('click', rock);
+paperHand.addEventListener('click', paper);
+scissorHand.addEventListener('click', scissors);
+lizardHand.addEventListener('click', lizard);
+spockHand.addEventListener('click', spock);
 document.getElementById('play').addEventListener('click', play);
 document.getElementById('reset-button').addEventListener('click', reset);
 
 // Functions to populate the users selection and clear random selection
 
 function rock() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">`;
-    document.getElementById('random-pick').innerHTML = "";
-    document.getElementById('rock').style.borderColor= "green";
-    document.getElementById('paper').style.borderColor= "lightgrey";
-    document.getElementById('scissors').style.borderColor= "lightgrey";
-    document.getElementById('lizard').style.borderColor= "lightgrey";
-    document.getElementById('spock').style.borderColor= "lightgrey";
-    document.getElementById('users-pick').style.borderColor= "beige";
-    document.getElementById('random-pick').style.borderColor= "beige";
+    usersPick.innerHTML = `<img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">`;
+    randomsPick.innerHTML = "";
+    rockHand.style.borderColor= "green";
+    paperHand.style.borderColor= "lightgrey";
+    scissorHand.style.borderColor= "lightgrey";
+    lizardHand.style.borderColor= "lightgrey";
+    spockHand.style.borderColor= "lightgrey";
+    usersPick.style.borderColor= "beige";
+    randomsPick.style.borderColor= "beige";
 }
 
 function paper() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="paper" src="assets/images/paper-hand-icon.png" alt="paper hand icon">`;
-    document.getElementById('random-pick').innerHTML = "";
-    document.getElementById('paper').style.borderColor= "green";
-    document.getElementById('rock').style.borderColor= "lightgrey";
-    document.getElementById('scissors').style.borderColor= "lightgrey";
-    document.getElementById('lizard').style.borderColor= "lightgrey";
-    document.getElementById('spock').style.borderColor= "lightgrey";
-    document.getElementById('users-pick').style.borderColor= "beige";
-    document.getElementById('random-pick').style.borderColor= "beige";
+    usersPick.innerHTML = `<img data-type="paper" src="assets/images/paper-hand-icon.png" alt="paper hand icon">`;
+    randomsPick.innerHTML = "";
+    paperHand.style.borderColor= "green";
+    rockHand.style.borderColor= "lightgrey";
+    scissorHand.style.borderColor= "lightgrey";
+    lizardHand.style.borderColor= "lightgrey";
+    spockHand.style.borderColor= "lightgrey";
+    usersPick.style.borderColor= "beige";
+    randomsPick.style.borderColor= "beige";
 }
 
 function scissors() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="scissors" src="assets/images/scissors-hand-icon.png" alt="scissors hand icon">`;
-    document.getElementById('random-pick').innerHTML = "";
-    document.getElementById('scissors').style.borderColor= "green";
-    document.getElementById('rock').style.borderColor= "lightgrey";
-    document.getElementById('paper').style.borderColor= "lightgrey";
-    document.getElementById('lizard').style.borderColor= "lightgrey";
-    document.getElementById('spock').style.borderColor= "lightgrey";
-    document.getElementById('users-pick').style.borderColor= "beige";
-    document.getElementById('random-pick').style.borderColor= "beige";
+    usersPick.innerHTML = `<img data-type="scissors" src="assets/images/scissors-hand-icon.png" alt="scissors hand icon">`;
+    randomsPick.innerHTML = "";
+    scissorHand.style.borderColor= "green";
+    rockHand.style.borderColor= "lightgrey";
+    paperHand.style.borderColor= "lightgrey";
+    lizardHand.style.borderColor= "lightgrey";
+    spockHand.style.borderColor= "lightgrey";
+    usersPick.style.borderColor= "beige";
+    randomsPick.style.borderColor= "beige";
 }
 
 function lizard() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">`;
-    document.getElementById('random-pick').innerHTML = "";
-    document.getElementById('lizard').style.borderColor= "green";
-    document.getElementById('rock').style.borderColor= "lightgrey";
-    document.getElementById('scissors').style.borderColor= "lightgrey";
-    document.getElementById('paper').style.borderColor= "lightgrey";
-    document.getElementById('spock').style.borderColor= "lightgrey";
-    document.getElementById('users-pick').style.borderColor= "beige";
-    document.getElementById('random-pick').style.borderColor= "beige";
+    usersPick.innerHTML = `<img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">`;
+    randomsPick.innerHTML = "";
+    lizardHand.style.borderColor= "green";
+    rockHand.style.borderColor= "lightgrey";
+    scissorHand.style.borderColor= "lightgrey";
+    paperHand.style.borderColor= "lightgrey";
+    spockHand.style.borderColor= "lightgrey";
+    usersPick.style.borderColor= "beige";
+    randomsPick.style.borderColor= "beige";
 }
 
 function spock() {
-    document.getElementById('users-pick').innerHTML = `<img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">`;
-    document.getElementById('random-pick').innerHTML = "";
-    document.getElementById('spock').style.borderColor= "green";
-    document.getElementById('rock').style.borderColor= "lightgrey";
-    document.getElementById('scissors').style.borderColor= "lightgrey";
-    document.getElementById('lizard').style.borderColor= "lightgrey";
-    document.getElementById('paper').style.borderColor= "lightgrey";
-    document.getElementById('users-pick').style.borderColor= "beige";
-    document.getElementById('random-pick').style.borderColor= "beige";
+    usersPick.innerHTML = `<img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">`;
+    randomsPick.innerHTML = "";
+    spockHand.style.borderColor= "green";
+    rockHand.style.borderColor= "lightgrey";
+    scissorHand.style.borderColor= "lightgrey";
+    lizardHand.style.borderColor= "lightgrey";
+    paperHand.style.borderColor= "lightgrey";
+    usersPick.style.borderColor= "beige";
+    randomsPick.style.borderColor= "beige";
 }
 
 // Function to generate a random hand when play button is clicked
 
 function play() {
 
-    let userPick = document.getElementById('users-pick');
+    let userPick = usersPick;
     let hands = document.getElementsByClassName('hands-img');
 
     // random number between 1 and 5
     let randomHand = Math.floor(Math.random() * 5);
 
     if (userPick.innerHTML !== "") {
-        document.getElementById('random-pick').innerHTML = hands[randomHand].innerHTML;
+        randomsPick.innerHTML = hands[randomHand].innerHTML;
         checkResult();
     } else {
         alert('Please select a hand');
@@ -100,79 +105,80 @@ function checkResult() {
     let usersHand = userPick.getAttribute("data-type");
     let randomPick = document.getElementById("random-pick").children[0];
     let randomsHand = randomPick.getAttribute("data-type");
+    let message = document.getElementById("win-lose-message");
 
     if (usersHand === randomsHand) {
         incrementDrawn();
-        document.getElementById("win-lose-message").innerHTML= "Stalemate... You picked the same hands!";
+        message.innerHTML= "Stalemate... You picked the same hands!";
     } else if (usersHand === "rock") {
         if (randomsHand === "paper") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Paper covers Rock!";
+            message.innerHTML= "You Lose... Paper covers Rock!";
         } else if (randomsHand === "spock") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Spock vaporizes Rock!";
+            message.innerHTML= "You Lose... Spock vaporizes Rock!";
         } else if (randomsHand === "scissors") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Rock smashes Scissors!";
+            message.innerHTML= "You Win... Rock smashes Scissors!";
         } else if (randomsHand === "lizard") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Rock crushes Lizard!";
+            message.innerHTML= "You Win... Rock crushes Lizard!";
         }
     } else if (usersHand === "paper") {
         if (randomsHand === "lizard") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Lizard eats Paper!";
+            message.innerHTML= "You Lose... Lizard eats Paper!";
         } else if (randomsHand === "scissors") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... scissors cuts Paper!";
+            message.innerHTML= "You Lose... scissors cuts Paper!";
         } else if (randomsHand === "rock") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Paper covers Rock!";
+            message.innerHTML= "You Win... Paper covers Rock!";
         } else if (randomsHand === "spock") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Paper disproves Spock!";
+            message.innerHTML= "You Win... Paper disproves Spock!";
         }
     } else if (usersHand === "scissors") {
         if (randomsHand === "rock") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Rock crushes Scissors!";
+            message.innerHTML= "You Lose... Rock crushes Scissors!";
         } else if (randomsHand === "spock") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Spock smashes Scissors!";
+            message.innerHTML= "You Lose... Spock smashes Scissors!";
         } else if (randomsHand === "paper") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Scissors cuts Paper!";
+            message.innerHTML= "You Win... Scissors cuts Paper!";
         } else if (randomsHand === "lizard") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Scissors decapitates Lizard!";
+            message.innerHTML= "You Win... Scissors decapitates Lizard!";
         }
      } else if (usersHand === "lizard") {
         if (randomsHand === "rock") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Rock crushes Lizard!";
+            message.innerHTML= "You Lose... Rock crushes Lizard!";
         } else if (randomsHand === "scissors") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Scissors decapitates Lizard!";
+            message.innerHTML= "You Lose... Scissors decapitates Lizard!";
         } else if (randomsHand === "paper") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Lizard eats Paper!";
+            message.innerHTML= "You Win... Lizard eats Paper!";
         } else if (randomsHand === "spock") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Lizard poisons Spock!";
+            message.innerHTML= "You Win... Lizard poisons Spock!";
         }
      } else if (usersHand === "spock") {
         if (randomsHand === "lizard") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Lizard poisons Spock!";
+            message.innerHTML= "You Lose... Lizard poisons Spock!";
         } else if (randomsHand === "paper") {
             incrementLost();
-            document.getElementById("win-lose-message").innerHTML= "You Lose... Paper disproves Spock!";
+            message.innerHTML= "You Lose... Paper disproves Spock!";
         } else if (randomsHand === "rock") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Spock vaporizes Rock!";
+            message.innerHTML= "You Win... Spock vaporizes Rock!";
         } else if (randomsHand === "scissors") {
             incrementWin();
-            document.getElementById("win-lose-message").innerHTML= "You Win... Spock smashes Scissors!";
+            message.innerHTML= "You Win... Spock smashes Scissors!";
         }
     }
 
@@ -187,8 +193,8 @@ function incrementWin() {
 
     let oldScore = parseInt(document.getElementById("won").innerText);
     document.getElementById("won").innerText = ++oldScore;
-    document.getElementById('users-pick').style.borderColor= "green";
-    document.getElementById('random-pick').style.borderColor= "red";
+    usersPick.style.borderColor= "green";
+    randomsPick.style.borderColor= "red";
 
 }
 
@@ -199,8 +205,8 @@ function incrementWin() {
 
     let oldScore = parseInt(document.getElementById("drawn").innerText);
     document.getElementById("drawn").innerText = ++oldScore;
-    document.getElementById('users-pick').style.borderColor= "grey";
-    document.getElementById('random-pick').style.borderColor= "grey";
+    usersPick.style.borderColor= "grey";
+    randomsPick.style.borderColor= "grey";
 
 }
 
@@ -211,8 +217,8 @@ function incrementLost() {
 
     let oldScore = parseInt(document.getElementById("lost").innerText);
     document.getElementById("lost").innerText = ++oldScore;
-    document.getElementById('users-pick').style.borderColor= "red";
-    document.getElementById('random-pick').style.borderColor= "green";
+    usersPick.style.borderColor= "red";
+    randomsPick.style.borderColor= "green";
 
 }
 
@@ -223,8 +229,8 @@ function reset() {
     for (var i = 0; i < hands.length; i++) {
         hands[i].style.borderColor= "lightgrey";
      }
-    document.getElementById('users-pick').style.borderColor= "beige";
-    document.getElementById('random-pick').style.borderColor= "beige";
+    usersPick.style.borderColor= "beige";
+    randomsPick.style.borderColor= "beige";
     document.getElementById("won").innerText = "0";
     document.getElementById("drawn").innerText = "0";
     document.getElementById("lost").innerText = "0";
