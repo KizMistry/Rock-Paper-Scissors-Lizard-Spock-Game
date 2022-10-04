@@ -5,13 +5,13 @@
 
 // Event listeners for game buttons to run each function
 
-document.getElementById('rock').addEventListener('click', rock)
-document.getElementById('paper').addEventListener('click', paper)
-document.getElementById('scissors').addEventListener('click', scissors)
-document.getElementById('lizard').addEventListener('click', lizard)
-document.getElementById('spock').addEventListener('click', spock)
-document.getElementById('play').addEventListener('click', play)
-document.getElementById('reset-button').addEventListener('click', reset)
+document.getElementById('rock').addEventListener('click', rock);
+document.getElementById('paper').addEventListener('click', paper);
+document.getElementById('scissors').addEventListener('click', scissors);
+document.getElementById('lizard').addEventListener('click', lizard);
+document.getElementById('spock').addEventListener('click', spock);
+document.getElementById('play').addEventListener('click', play);
+document.getElementById('reset-button').addEventListener('click', reset);
 
 // Functions to populate the users selection and clear random selection
 
@@ -79,17 +79,17 @@ function spock() {
 
 function play() {
 
-    let userPick = document.getElementById('users-pick')
-    let hands = document.getElementsByClassName('hands-img')
+    let userPick = document.getElementById('users-pick');
+    let hands = document.getElementsByClassName('hands-img');
 
     // random number between 1 and 5
-    let randomHand = Math.floor(Math.random() * 5)
+    let randomHand = Math.floor(Math.random() * 5);
 
     if (userPick.innerHTML !== "") {
         document.getElementById('random-pick').innerHTML = hands[randomHand].innerHTML;
-        checkResult()
+        checkResult();
     } else {
-        alert('Please select a hand')
+        alert('Please select a hand');
     }
 
 }
@@ -176,8 +176,8 @@ function checkResult() {
         }
     }
 
-    console.log(usersHand)
-    console.log(randomsHand)
+    console.log(usersHand);
+    console.log(randomsHand);
 }
 
 /**
@@ -218,11 +218,11 @@ function incrementLost() {
 
 // Function to reset the game and scores
 function reset() {
-    let hands = document.getElementsByClassName('hands')
+    let hands = document.getElementsByClassName('hands');
 
     for (var i = 0; i < hands.length; i++) {
         hands[i].style.borderColor= "lightgrey";
-     };
+     }
     document.getElementById('users-pick').style.borderColor= "beige";
     document.getElementById('random-pick').style.borderColor= "beige";
     document.getElementById("won").innerText = "0";
