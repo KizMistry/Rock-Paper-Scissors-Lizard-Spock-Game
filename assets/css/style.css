@@ -128,7 +128,7 @@ img {
 #rules-button {
     text-align:left;
     position:relative;
-    right: 400px;
+    right: 30%;
     top: 50px;
     display: inline-flex;
 }
@@ -136,7 +136,33 @@ img {
 #reset-button {
     text-align:right;
     position:relative;
-    left: 400px;
+    left: 30%;
     top: 50px;
     display: inline-flex;
+}
+
+#rules img {
+    width: 350px;
+    height: 300px;
+}
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1020px wide and down */
+@media screen and (max-width: 1032px) {
+    .hands {
+        margin: 20px 100px;
+    }
+
+    #scissors {
+        display:block;
+        margin-left:40%
+    }
+}
+
+/* For large to medium screens sizes from 1020px wide and down */
+@media screen and (max-width: 768px) {
+    .hands {
+        margin: 0px 100px
+    }
 }
