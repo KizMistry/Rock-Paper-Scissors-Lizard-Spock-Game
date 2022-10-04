@@ -1,116 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A fun interactive game of rock-paper-scissors-lizard-spock">
-    <meta name="keywords"
-        content="rock, paper, scissors, lizard, spock, game, fun, play">
+    <meta name="description" content="A fun interactive game of rock-paper-scissors-lizard-spock">
+    <meta name="keywords" content="rock, paper, scissors, lizard, spock, game, fun, play">
 
 
     <link rel='shortcut icon' type='image/x-icon' href='assets/images/game-icon.png' />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, Paper, Scissors</title>
 </head>
+
 <body>
     <h1 id="heading">
         Rock-Paper-Scissors-Lizard-Spock
     </h1>
-    
-    <div id="game-area">
 
-        <button id="rules-button">
-            <a href="#rules">How To Play</a>
-        </button>
+    <main>
+        <div id="game-area">
 
-        <button id="reset-button">
-            <a>Reset</a>
-        </button>
-        
-        <div id="result-message">
-            <h2 id="win-lose-message">you win/lose</h2>
-           
-        </div>
-        
-        <div id="game-picks">
 
-            <div class="pick-display" id="users-pick"></div>
-        
-            <div class="pick-display" id="random-pick"></div>
+            <a id="rules-button" href="#rules">How To Play</a>
 
-        </div>
 
-        <h3>Pick Your Hand</h3>
+            <button id="reset-button">
+                Reset
+            </button>
 
-        <div class="hands" id="rock">
-            <div class="hands-img">
-                <img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">
+            <div id="result-message">
+                <h2 id="win-lose-message">you win/lose</h2>
+
             </div>
-            <p>Rock</p>
-        </div>
-        <div class="hands" id="paper">
-            <div class="hands-img">
-                <img data-type="paper" src="assets/images/paper-hand-icon.png" alt="paper hand icon">
+
+            <div id="game-picks">
+
+                <div class="pick-display" id="users-pick"></div>
+
+                <div class="pick-display" id="random-pick"></div>
+
             </div>
-            <p>Paper</p>
-        </div>
-        <div class="hands" id="scissors">
-            <div class="hands-img">
-                <img data-type="scissors" src="assets/images/scissors-hand-icon.png" alt="scissors hand icon">
+
+            <h3>Pick Your Hand</h3>
+
+            <div id="hand-selection">
+                <div class="hands" id="rock">
+                    <div class="hands-img">
+                        <img data-type="rock" src="assets/images/rock-hand-icon.png" alt="rock hand icon">
+                    </div>
+                    <p>Rock</p>
+                </div>
+                <div class="hands" id="paper">
+                    <div class="hands-img">
+                        <img data-type="paper" src="assets/images/paper-hand-icon.png" alt="paper hand icon">
+                    </div>
+                    <p>Paper</p>
+                </div>
+                <div class="hands" id="scissors">
+                    <div class="hands-img">
+                        <img data-type="scissors" src="assets/images/scissors-hand-icon.png" alt="scissors hand icon">
+                    </div>
+                    <p>Scissors</p>
+                </div>
+                <div class="hands" id="lizard">
+                    <div class="hands-img">
+                        <img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">
+                    </div>
+                    <p>Lizard</p>
+                </div>
+                <div class="hands" id="spock">
+                    <div class="hands-img">
+                        <img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">
+                    </div>
+                    <p>Spock</p>
+                </div>
             </div>
-            <p>Scissors</p>
-        </div>
-        <div class="hands" id="lizard">
-            <div class="hands-img">
-                <img data-type="lizard" src="assets/images/lizard-hand-icon.png" alt="lizard hand icon">
+
+            <div id="play-game-btn">
+                <button id="play" data-type="submit">Play</button>
             </div>
-            <p>Lizard</p>
-        </div>
-        <div class="hands" id="spock">
-            <div class="hands-img">
-                <img data-type="spock" src="assets/images/spock-hand-icon.png" alt="spock hand icon">
+
+
+            <div class="score-area">
+                <p class="scores won">Rounds Won: <span id="won">0</span></p>
+                <p class="scores drawn">Rounds Drawn: <span id="drawn">0</span></p>
+                <p class="scores lost">Rounds Lost: <span id="lost">0</span></p>
             </div>
-            <p>Spock</p>
+
+
         </div>
 
-        <div id="play-game-btn">
-            <button id="play" data-type="submit">Play</button>
+        <div id="rules">
+            <h2>
+                How To Play
+            </h2>
+            <p>
+                <b>Rock</b> smashes scissors, and smashes Lizard.
+            </p>
+            <p>
+                <b>Paper</b> covers Rock, and disproves Spock.
+            </p>
+            <p>
+                <b>Scissors</b> cuts Paper, and decapitates Lizard.
+            </p>
+            <p>
+                <b>Lizard</b> eats Paper, and poisons Spock.
+            </p>
+            <p>
+                <b>Spock</b> vaporizes Rock, and smashes Scissors.
+            </p>
+            <img src="assets/images/rules-image.png" alt="the rules of rock-paper-scissors-lizard-spock">
         </div>
-        
-
-        <div class="score-area">
-            <p class="scores won">Rounds Won: <span id="won">0</span></p>
-            <p class="scores drawn">Rounds Drawn: <span id="drawn">0</span></p>
-            <p class="scores lost">Rounds Lost: <span id="lost">0</span></p>
-        </div>
-        
-
-    </div>
-
-    <div id="rules">
-        <h2>
-            How To Play
-        </h2>
-        <p>
-            <b>Rock</b> smashes scissors, and smashes Lizard.
-        </p>
-        <p>
-            <b>Paper</b> covers Rock, and disproves Spock.
-        </p>
-        <p>
-            <b>Scissors</b> cuts Paper, and decapitates Lizard.
-        </p>
-        <p>
-            <b>Lizard</b> eats Paper, and poisons Spock.
-        </p>
-        <p>
-            <b>Spock</b> vaporizes Rock, and smashes Scissors.
-        </p>
-        <img src="assets/images/rules-image.png" alt="the rules of rock-paper-scissors-lizard-spock">
-    </div>
-
+    </main>
+    <footer></footer>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
