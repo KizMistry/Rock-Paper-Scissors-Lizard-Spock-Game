@@ -7,14 +7,14 @@ body {
     font-family: raleway, Arial, Helvetica, sans-serif;
 }
 
-/* heading */
+/* Heading */
 h1 {
     margin: auto;
     padding: 20px;
     font-size: 40px;
 }
 
-/* game area */
+/* Game area */
 #game-area {
     margin: 0;
     height: auto;
@@ -23,10 +23,10 @@ h1 {
 }
 
 #win-lose-message {
-    display:inline-block
+    display: inline-block
 }
 
-/* score tally */
+/* Score tally */
 .scores {
     display: inline-block;
     box-sizing: border-box;
@@ -57,39 +57,39 @@ h1 {
 
 .pick-display {
     background-color: beige;
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
     display: inline-block;
-    border-radius: 250px;
+    border-radius: 175px;
     margin: 20px;
     border: 5px solid beige;
     align-items: center;
 }
 
 #users-pick {
-    display:inline-block;
-    align-items:center;
+    display: inline-block;
+    align-items: center;
     margin: 0;
     padding: 20px
 }
 
 #users-pick img {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 90%;
     display: flex;
     justify-content: center;
 }
 
 #random-pick {
-    display:inline-block;
-    align-items:center;
+    display: inline-block;
+    align-items: center;
     margin: 0;
     padding: 20px;
 }
 
 #random-pick img {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 90%;
     display: flex;
     justify-content: center;
 }
@@ -97,33 +97,34 @@ h1 {
 /* User selections */
 .hands {
     background-color: lightgrey;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     display: inline-block;
-    border-radius: 150px;
-    margin: 20px;
+    border-radius: 125px;
+    margin: 10px;
     border: 5px solid lightgrey;
     /* box-sizing:border-box; */
 }
 
 .hands-img {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
 }
 
 img {
-    width:100px;
-    height:100px;
+    width: 90px;
+    height: 90px;
 }
 
 /* Buttons */
 #play-game-btn {
     display: block;
     margin: 20px;
-    height:50px; 
+    height: 50px;
 }
+
 #play-game-btn button {
     height: 50px;
     width: 100px;
@@ -132,16 +133,16 @@ img {
 }
 
 #rules-button {
-    text-align:left;
-    position:relative;
+    text-align: left;
+    position: relative;
     right: 30%;
     top: 50px;
     display: inline-flex;
 }
 
 #reset-button {
-    text-align:right;
-    position:relative;
+    text-align: right;
+    position: relative;
     left: 30%;
     top: 50px;
     display: inline-flex;
@@ -152,62 +153,86 @@ img {
     height: 300px;
 }
 
-/* The Modal (background) */
+/* Modal background */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 /* Media queries */
 
 /* For large to medium screens sizes from 1020px wide and down */
-@media screen and (max-width: 1032px) {
-    .hands {
-        margin: 20px 100px;
-    }
-
-    #scissors {
-        display:block;
-        margin-left:40%
-    }
-}
-
-/* For large to medium screens sizes from 1020px wide and down */
 @media screen and (max-width: 768px) {
+
+    /* User pick */
+    .pick-display {
+        background-color: beige;
+        width: 125px;
+        height: 125px;
+        display: inline-block;
+        border-radius: 175px;
+        margin: 20px;
+        border: 5px solid beige;
+        align-items: center;
+    }
+
+    /* User selections */
     .hands {
-        margin: 0px 100px
+        background-color: lightgrey;
+        width: 75px;
+        height: 75px;
+        display: inline-block;
+        border-radius: 75px;
+        margin: 20px;
+        border: 5px solid lightgrey;
+        /* box-sizing:border-box; */
+    }
+
+    .hands-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+    }
+
+    img {
+        width: 80%;
+        height: 80%;
     }
 }
