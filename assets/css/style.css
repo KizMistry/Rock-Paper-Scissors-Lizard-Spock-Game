@@ -7,12 +7,14 @@ body {
     font-family: raleway, Arial, Helvetica, sans-serif;
 }
 
+/* heading */
 h1 {
     margin: auto;
     padding: 20px;
     font-size: 40px;
 }
 
+/* game area */
 #game-area {
     margin: 0;
     height: auto;
@@ -20,6 +22,11 @@ h1 {
     background-color: aqua;
 }
 
+#win-lose-message {
+    display:inline-block
+}
+
+/* score tally */
 .scores {
     display: inline-block;
     box-sizing: border-box;
@@ -40,6 +47,7 @@ h1 {
     text-align: right;
 }
 
+/* User pick and random generated pick */
 #game-picks {
     height: auto;
     width: auto;
@@ -86,6 +94,7 @@ h1 {
     justify-content: center;
 }
 
+/* User selections */
 .hands {
     background-color: lightgrey;
     width: 150px;
@@ -109,6 +118,7 @@ img {
     height:100px;
 }
 
+/* Buttons */
 #play-game-btn {
     display: block;
     margin: 20px;
@@ -119,10 +129,6 @@ img {
     width: 100px;
     border-radius: 10px;
     font-size: 20px
-}
-
-#win-lose-message {
-    display:inline-block
 }
 
 #rules-button {
@@ -145,6 +151,45 @@ img {
     width: 350px;
     height: 300px;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /* Media queries */
 
