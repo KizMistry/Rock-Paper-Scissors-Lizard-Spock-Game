@@ -268,4 +268,14 @@ img {
         margin: 5px;
         font-size: 15px
     }
+
+    #rules-button {
+        right: 20%;
+        top: 40px;
+    }
+    
+    #reset-button {
+        left: 20%;
+        top: 40px;
+    }
 }
