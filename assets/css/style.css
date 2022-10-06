@@ -201,7 +201,7 @@ img {
 
 /* Media queries */
 
-/* For large to medium screens sizes from 1020px wide and down */
+/* For large to medium screens sizes from 768px wide and down */
 @media screen and (max-width: 768px) {
 
     /* User pick */
@@ -263,7 +263,7 @@ img {
     .hands {
         margin: 10px
     }
-    
+
     .score-area p {
         margin: 5px;
         font-size: 15px
@@ -273,9 +273,36 @@ img {
         right: 20%;
         top: 40px;
     }
-    
+
     #reset-button {
         left: 20%;
         top: 40px;
+    }
+}
+
+/* For medium screens sizes from 375px wide and down */
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* For medium screens sizes from 320px wide and down */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 14px
+    }
+
+    .pick-display {
+        width: 75px;
+        height: 75px;
+    }
+
+    .hands {
+        margin: 5px
     }
 }
