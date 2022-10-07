@@ -196,6 +196,15 @@ img {
 
 /* Media queries */
 
+/* To prevent how to play and reset buttons overlapping results message */
+@media screen and (max-width: 900px) {
+
+    #rules-button,
+    #reset-button {
+        top: 15px
+    }
+}
+
 /* For large to medium screens sizes from 768px wide and down */
 @media screen and (max-width: 768px) {
 
@@ -298,17 +307,17 @@ img {
     #rules p {
         font-size: 14px;
     }
+
+    .pick-display {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 /* For medium screens sizes from 320px wide and down */
 @media screen and (max-width: 320px) {
     h1 {
         font-size: 14px
-    }
-
-    .pick-display {
-        width: 75px;
-        height: 75px;
     }
 
     .hands {
