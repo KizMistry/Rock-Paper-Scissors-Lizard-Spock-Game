@@ -248,13 +248,13 @@ function reset() {
 
 rulesButton.onclick = function () {
     rulesModal.style.display = "block";
-}
+};
 
 // Close the modal when 'x' button is clicked
 
 closeModal.onclick = function () {
     rulesModal.style.display = "none";
-}
+};
 
 // Modal closed when anywhere outside the modal is clicked
 
@@ -262,4 +262,4 @@ window.onclick = function (event) {
     if (event.target == rulesModal) {
         rulesModal.style.display = "none";
     }
-}
+};
