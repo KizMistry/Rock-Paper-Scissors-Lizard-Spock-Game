@@ -1,76 +1,82 @@
 # Rock-Paper-Scissor-Lizard-Spock
  
-Rock-Paper-Scissor-Lizard-Spock is an interactive game website that hopes to provide a fun experience. Yoga Utopia's goal is to teach visitors the origins and benefits of practicing Yoga, Meditation and the importance of Mental Well-being.
+Rock-Paper-Scissor-Lizard-Spock is an interactive game website that hopes to provide a fun experience. The website's goal is to give visitors a game of chance.
 
-Yoga Utopia provides beginner-friendly content which is also beneficial to a more experienced Yogi.
-The site has useful information relating to Yoga, Meditation, and Mental-Health that will help educate people interested in each category.
-Yoga Utopia aims to leave people feeling stronger, healthier and happier.
+The game is completely user friendly and very intuitive area which gives the user confidence with their interactions.
+The site is also vibrant to give the game and the user a relaxing feeling.
 
-![Yoga Utopia](/assets/readme-media/Yoga-Utopia_index.html.png)
+![Rock-Paper-Scissor-Lizard-Spock](/assets/readme-media/rock-paper-scissors-full.png)
 
 ## Features 
 
 ### Existing Features
 
-- __Navigation Bar__
+- __Heading__
 
-  - Featured on all four pages, the full responsive navigation bar includes links to the Logo/Name, Home, Yoga, Meditation, Mental-Health page and Sign Up section located on the Home page and is identical in each page to allow for easy navigation.
-  - The navigation bar is responsive and will collapse into a hamburger menu when used on medium and small screens.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - A simple, clear heading that lets the user know instantly what the site is about 
 
-![Nav Bar](/assets/readme-media/navigation-bar.png)
+![Heading](/assets/readme-media/heading.png)
 
-- __The Landing Page Image__
+- __The Game Area__
 
-  - The landing page has a photograph with text overlay welcoming the user and informing them Yoga Utopia's goal. 
-  - This section introduces the user to Yoga Utopia with a vibrant image to not only grab their attention but also suggestive towards the capabilities of what can be achieved with Yoga Utopia.
+  - The game area is the main section of the page where the user will focus. 
+  - This section is designed to fit the screen of all devices so the user can interact with the area without having the scroll.
 
-![Landing Page](/assets/readme-media/landing-page.png)
+![Game Area](/assets/readme-media/game-area.png)
 
-- __What We Offer Section__
+- __Welcome and Results Area__
 
-  - The what we offer section is an informative section that tells the user what can be found on each of the Yoga, Meditation and Mental-Health pages.
-  - The user will be advised early as to what is available to them on Yoga Utopia and can make an informed decision as to what page they'd like to visit.
+  - The Welcome area doubles up as a results message area. When the game is played, a message describing the outcome of the round will replace the welcome message.
+  - The 'How To Play' button is an interactive button which opens a modal displaying the game rules.
+  - The 'Reset' button will let the user reset their score.
 
-![What We Offer](/assets/readme-media/what-we-offer.png)
+![Welcome Area](/assets/readme-media/welcome.png)
 
-- __About Us Section__
+- __How To Play__
+ 
+  - The rules informs the user what the possible outcomes are for each hand.
+  - This section includes an image that provides a visual aid to the written rules.
 
-  - The about us section gives a more detailed overview to Yoga Utopia's goals, offerings, and benefits. 
-  - This will give the user more of an insight to Yoga Utopia and will help make them feel more comfortable with the content available/provided to them. 
+![How To Play](/assets/readme-media/how-to-play-info.png)
 
-![About Us](/assets/readme-media/about-us.png)
+- __User Selection__
 
-- __Sign Up Section__
+  - This section shows the user the available options they can select to play the game with.
+  - The options respond to the users click, with the border turning green when selected, indicating the user they have succesfully chosen their hand.
 
-  - This section will allow the user to subscribe to Yoga Utopia's emailed newsletters that will be sent to the user on a weekly basis. The user will be asked to submit their full name and email address.
-  - The newsletter will contain all the up-to date news around the yoga community, provide fresh content weekly, available offers, and the latest Yoga Utopia news.
+![User Selection](/assets/readme-media/user-selection.png)
 
-![Sign Up](/assets/readme-media/sign-up.png)
+- __Game Selections__
 
-- __Contact Section__
+  - This area is the main focus of the game, where the users hand and the computers hand is displayed when played.
+  - As a visual aid to the outcome, the border of each circle diplay will change color to green, red or grey depending on the winner/loser or draw.
 
-  - The contact section includes Yoga Utopia's location, phone, and email details.
-  - The details are made available to the user for any queries they may have for Yoga Utopia and would like a form of contact. 
+![Game Selections](/assets/readme-media/main-picks.png)
 
-![Contact](/assets/readme-media/contact.png)
+- __Play__
+
+  - Play button used to run the game once the user has selected their hand. 
+
+![Play Button](/assets/readme-media/play-button.png)
+
+- __Score Area__
+
+  - This section is where the user can track how many rounds they have won, lost or drawn.
+  - The scores are automatically calculated after each round played. 
+
+![Score Area](/assets/readme-media/score-area.png)
 
 ### Future Feature Ideas
 
-- __Yoga Page Tutorials__
+- __Score Limit__
 
-  - Tutorial content for the Yoga page. The content will contain a step-by-step guide to a variety of yoga stretches and corresponding images/videos to provide a visual and/or audible example.
-  - This will provide the user with much more accessible content on the yoga page they can follow along with.
+  - A 'best of #' mode where you only have a certain amount of rounds to beat the computer.
+  - This will provide the user with more options and fun.
 
-- __Meditation Page Techniques__
+- __Pattern Recognition__
 
-  - Technique content for the Meditation page. The content will contain a variety of meditation techniques and corresponding images/videos to provide a visual and/or audible aid.
-  - This will provide the user with much more accessible content on the meditation page that they can follow along with.
-
-- __Mental Health Page Advice__
-
-  - Self-improvement content for the Mental Health page. The content will contain more well-being advice and steps that can be taken to improve their mentality. 
-  - This will provide the user with much more accessible and useful content on the mental-health page.
+  - Implement a function to see if the user has picked the same hand 3 times in a row, if so, pick a an opposing hand.
+  - This will force the user to switch up their choice more frequently.  
 
 ## Testing 
 
@@ -85,6 +91,20 @@ All pages and sections of Yoga Utopia were tested; Some of the main testing poin
 
 The website is fully responsive to all devices and screen sizes.
 
+| Test       | Expected           | Passed  |
+| :------------- |:-------------:| :-----:|
+| User clicks 'How To Play' button      | Modal opens | ✅ |
+| User clicks 'x' button in the modal      | Modal closes | ✅ |
+| User clicks outside modal area (while modal is open)| Modal closes | ✅ |
+| User clicks 'Play' button before selecting hand     | An alert appears telling the user to select a hand      |   ✅ |
+| User clicks any of the hand buttons | Border turns green and their hand displays in the users pick area       | ✅ |
+| User clicks 'Play' button after selecting hand | Game runs, random hand generated and displayed, correct results message displays and scores updated | ✅  |
+| User clicks 'Reset' button | An alert appears and the scores, user pick, computer pick, results message, and hand selections are reset to defualt | ✅  |
+|   |  | ✅  |
+|   |  |  ✅ |
+|   |  |  ✅ |
+
+
 The website was shared with family and friends to test the websites usage and no problems/issues were mentioned in their feedback.
 
 ### Validator Testing 
@@ -94,7 +114,7 @@ The website was shared with family and friends to test the websites usage and no
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkizmistry.github.io%2FRock-Paper-Scissors-Lizard-Spock-Game%2F&usermedium=all&vextwarning=&warning=1)
 - JS
-  - No errors were found when passing through JSHint
+  - No errors were found when passing script.js through JSHint
 
 
 ### Unfixed Bugs

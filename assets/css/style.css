@@ -241,8 +241,8 @@ img {
     }
 }
 
-/* For medium screens sizes from 425px wide and down */
-@media screen and (max-width: 425px) {
+/* For medium screens sizes from 428px wide and down */
+@media screen and (max-width: 428px) {
     h1 {
         font-size: 22px;
     }

@@ -191,9 +191,6 @@ function checkResult() {
             message.innerHTML = "You Win... Spock smashes Scissors!";
         }
     }
-
-    console.log(usersHand);
-    console.log(randomsHand);
 }
 
 // Gets the current rounds won from the DOM and increments it by 1
@@ -242,6 +239,7 @@ function reset() {
     win.innerText = "0";
     draw.innerText = "0";
     lose.innerText = "0";
+    alert('Resetting Game...');
 }
 
 // Open the modal when how to play button clicked
