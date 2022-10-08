@@ -80,16 +80,8 @@ The site is also vibrant to give the game and the user a relaxing feeling.
 
 ## Testing 
 
-The Yoga Utopia Home, Yoga, Meditation and Mental Health page all work as intended.
-All pages and sections of Yoga Utopia were tested; Some of the main testing points included:
-  - page navigation
-  - testing all clickable links
-  - hovering cursor over clickable links i.e. Navigation Bar, Footer Icons, What we Offer boxes, Logo etc.
-  - responsiveness of each section, image, video, text, navigation bar, and footer by resizing the browsers display area
-  - test the playback of the embedded youtube videos
-  - test hamburger menu responsiveness when screen size is changed
-
-The website is fully responsive to all devices and screen sizes.
+The Rock-Paper-Scissors_Lizard-Rock site and game all work as intended.
+All sections were tested; Some of the main testing points included:
 
 | Test       | Expected           | Passed  |
 | :------------- |:-------------:| :-----:|
@@ -100,9 +92,9 @@ The website is fully responsive to all devices and screen sizes.
 | User clicks any of the hand buttons | Border turns green and their hand displays in the users pick area       | ✅ |
 | User clicks 'Play' button after selecting hand | Game runs, random hand generated and displayed, correct results message displays and scores updated | ✅  |
 | User clicks 'Reset' button | An alert appears and the scores, user pick, computer pick, results message, and hand selections are reset to defualt | ✅  |
-|   |  | ✅  |
 |   |  |  ✅ |
 |   |  |  ✅ |
+| Responsiveness of each screen size  | Each section and button adjusted size to fit the diplay |  ✅ |
 
 
 The website was shared with family and friends to test the websites usage and no problems/issues were mentioned in their feedback.
