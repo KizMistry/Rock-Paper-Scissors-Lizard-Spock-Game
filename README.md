@@ -2,7 +2,7 @@
  
 Rock-Paper-Scissor-Lizard-Spock is an interactive game website that hopes to provide a fun experience. The website's goal is to give visitors a game of chance.
 
-The game is completely user friendly and very intuitive area which gives the user confidence with their interactions.
+The game is completely user friendly and very intuitive which gives the user confidence with their interactions.
 The site is also vibrant to give the game and the user a relaxing feeling.
 
 ![Rock-Paper-Scissor-Lizard-Spock](/assets/readme-media/rock-paper-scissors-full.png)
@@ -34,7 +34,7 @@ The site is also vibrant to give the game and the user a relaxing feeling.
 
 - __How To Play__
  
-  - The rules informs the user what the possible outcomes are for each hand.
+  - The rules inform the user what the possible outcomes are for each hand.
   - This section includes an image that provides a visual aid to the written rules.
 
 ![How To Play](/assets/readme-media/how-to-play-info.png)
@@ -42,14 +42,14 @@ The site is also vibrant to give the game and the user a relaxing feeling.
 - __User Selection__
 
   - This section shows the user the available options they can select to play the game with.
-  - The options respond to the users click, with the border turning green when selected, indicating the user they have succesfully chosen their hand.
+  - The options respond to the users click, with the border turning green when selected, indicating the user they have successfully chosen their hand.
 
 ![User Selection](/assets/readme-media/user-selection.png)
 
 - __Game Selections__
 
   - This area is the main focus of the game, where the users hand and the computers hand is displayed when played.
-  - As a visual aid to the outcome, the border of each circle diplay will change color to green, red or grey depending on the winner/loser or draw.
+  - As a visual aid to the outcome, the border of each circle display will change color to green, red or gray depending on the winner/loser or draw.
 
 ![Game Selections](/assets/readme-media/main-picks.png)
 
@@ -62,7 +62,7 @@ The site is also vibrant to give the game and the user a relaxing feeling.
 - __Score Area__
 
   - This section is where the user can track how many rounds they have won, lost or drawn.
-  - The scores are automatically calculated after each round played. 
+  - The scores are automatically calculated after each round is played. 
 
 ![Score Area](/assets/readme-media/score-area.png)
 
@@ -70,12 +70,12 @@ The site is also vibrant to give the game and the user a relaxing feeling.
 
 - __Score Limit__
 
-  - A 'best of #' mode where you only have a certain amount of rounds to beat the computer.
-  - This will provide the user with more options and fun.
+  - A 'best of' mode where you only have a certain amount of rounds (3, 5, 7, etc) to beat the computer.
+  - This will provide the user with more game type options and a different challenge.
 
 - __Pattern Recognition__
 
-  - Implement a function to see if the user has picked the same hand 3 times in a row, if so, pick a an opposing hand.
+  - Implement a function to see if the user has picked the same hand 3 times in a row; if so, pick the opposite hand.
   - This will force the user to switch up their choice more frequently.  
 
 ## Testing 
@@ -90,14 +90,15 @@ All sections were tested; Some of the main testing points included:
 | User clicks outside modal area (while modal is open)| Modal closes | ✅ |
 | User clicks 'Play' button before selecting hand     | An alert appears telling the user to select a hand      |   ✅ |
 | User clicks any of the hand buttons | Border turns green and their hand displays in the users pick area       | ✅ |
-| User clicks 'Play' button after selecting hand | Game runs, random hand generated and displayed, correct results message displays and scores updated | ✅  |
-| User clicks 'Reset' button | An alert appears and the scores, user pick, computer pick, results message, and hand selections are reset to defualt | ✅  |
-|   |  |  ✅ |
-|   |  |  ✅ |
-| Responsiveness of each screen size  | Each section and button adjusted size to fit the diplay |  ✅ |
+| User clicks 'Play' button after selecting hand | Game runs, random hand generated and displayed,<br> correct results message displays and scores updated | ✅  |
+| User clicks 'Reset' button | An alert appears and the scores, user pick, computer pick,<br> results message, and hand selections are reset to defualt | ✅  |
+| Responsiveness of each screen size  | Each section and button adjusted size to fit all device displays |  ✅ |
+
+
 
 
 The website was shared with family and friends to test the websites usage and no problems/issues were mentioned in their feedback.
+
 
 ### Validator Testing 
 
@@ -131,5 +132,8 @@ The live link can be found here - https://kizmistry.github.io/Rock-Paper-Scissor
 
 ### Media
 
-- The photos used on the home, yoga, meditation and mental-health page are from Pexels user 'Elina Fairytale': [Pexels](https://www.pexels.com/@elly-fairytale/)
-- The background image used for on the meditation and mental-health page are from Pexels user 'Pixabay': [Pexels](https://www.pexels.com/@pixabay/)
+- The rock hand icon used: [Share Icon](https://www.shareicon.net/o-hand-rock-851912)
+- The paper hand icon used: [Online Web Fonts](https://www.onlinewebfonts.com/icon/294420)
+- The scissors hand icon used: [Share Icon](https://www.shareicon.net/o-scissors-hand-851911)
+- The lizard hand icon used: [Wikimedia](https://commons.wikimedia.org/wiki/File:Font_Awesome_5_regular_hand-lizard.svg)
+- The spock hand icon used: [Share Icon](https://www.shareicon.net/o-hand-spock-851910)
