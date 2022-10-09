@@ -3,7 +3,7 @@
 Rock-Paper-Scissor-Lizard-Spock is an interactive game website that hopes to provide a fun experience. The website's goal is to give visitors a game of chance.
 
 The game is completely user friendly and very intuitive which gives the user confidence with their interactions.
-The site is also vibrant to give the game and the user a relaxing feeling.
+The site is also vibrant to give the game and the user a classic gaming feel.
 
 ![Rock-Paper-Scissor-Lizard-Spock](/assets/readme-media/rock-paper-scissors-full.png)
 
